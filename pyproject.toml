@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "bot-countries-demo"
+version = "0.1.0"
+description = ""
+authors = ["Sergey Kim <<sergkim7@gmail.com>>"]
+readme = "README.md"
+packages = [
+    {include = "aiogram_layer"},
+    {include = "cache"},
+    {include = "django_layer"},
+    {include = "services"},
+    {include = "tasks"},
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = "3.0.0b7"
+django = "^4.1.7"
+python-dotenv = "^1.0.0"
+psycopg2-binary = "^2.9.5"
+pre-commit = "^3.1.1"
+celery = "^5.2.7"
+asyncpg = "^0.27.0"
+aioredis = "^2.0.1"
+pydantic = "^1.10.6"
+django-jazzmin = "^2.6.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+pytest-asyncio = "^0.20.3"
+pytest-cov = "^4.0.0"
+pytest-django = "^4.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
