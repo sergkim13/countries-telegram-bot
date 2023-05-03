@@ -21,7 +21,7 @@ You also can get info about any city:
 4. `Make` utily for MacOS, Linux.
 
 ### Install:
-1. Clone repository: https://github.com/sergkim13/countries_telegram_bot
+1. Clone repository: https://github.com/sergkim13/countries-telegram-bot
 2. Create `.env` and fill it up according to `.envexample`.
 3. Type `make install` to install dependencies.
 4. Type `make compose` for running application in docker container. Type `make stop` to stop app container.
